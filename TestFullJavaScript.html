@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<script>
+    alert("Xin chào bà con");
+</script>
+
+<head>
+    <title>Test full javaScript</title>
+</head>
+
+<body>
+    <script src="./TestFullJavaScript.js"></script>
+    <h3 id="khanh">HỌC HTML</h3>
+    <h3 id="hieu">HỌC CSS</h3>
+    <h3 id="truong">HỌC JAVASCRIPT</h3>
+    
+    <input type="text" id="css" value="học javascript">
+    <div >
+        <input type="text" value="Học css">
+        <input type="text" value="Học javascript">
+    </div>
+    <script>
+        var chuoi1="HỌC HTML VÀ CSS";
+        document.write("Thứ tự chuỗi là"+chuoi1.indexOf("HTML")+"<br>");
+        document.write(chuoi1.replace("HTML","JavaScript")+"<br>");
+        document.write("Chuỗi lấy ra: "+chuoi1.slice(4,8)+"<br>");
+        document.write("chiều dài mảng: "+chuoi1.split("").length);
+        document.getElementById("khanh").innerHTML="HỌC LẬP TRÌNH WEB";
+        document.getElementById("hieu").innerHTML="muốn học gì học";
+        document.getElementById("truong").innerHTML="học sau cũng được";
+        var ngaythangnam= new Date("01/06/1999");
+        document.write("ngày tháng năm là: "+ngaythangnam+"<br>");
+        QuanLySinhVien();
+        TimSoChan();
+        TestAlert();
+    </script>
+    <script>
+        set_content();
+        get_content();
+    
+        
+    </script>
+    <input type="button" value="Lấy nội dung" onclick="get_content()">
+    <input type="button" value="Thay đổi nội dung" onclick="set_content()">
+    <h3 id="content">Đây là nộ dung của thẻ div</h3>
+
+
+</body>
+
+</html>

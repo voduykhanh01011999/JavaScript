@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test javascript</title>
+    </head>
+    <body>
+        <script src="./TestFormJs.js"></script>
+        <script>
+            function change(){
+                var bientam=document.getElementById("bientam");
+                var type=bientam.type;
+                if(type=="button")
+                {
+                    bientam.type="text";
+                }
+                else
+                {
+                    bientam.type="button";
+                }
+            }
+        </script>
+        <script>
+            
+        </script>
+        <div id="ok">Chào mừng các bạn đến với JavaScript <br></div>
+        <input type="button" value="Change background" onclick="change_background()">
+        <input type="button" value="Change color" onclick="change_color()">
+        <input type="button" value="Change height" onclick="change_height()">
+        <input type="button" value="Change font-size" onclick="change_font_size()">
+    </body>
+</html>

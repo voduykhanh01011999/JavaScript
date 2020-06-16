@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            alert("Bạn thích học HTML không?");
+        </script>
+        <title>
+            Test javaScript
+        </title>
+    </head>
+    <body>
+        <h3 id="nd1">HỌC HTML và CSS</h3>
+        <button type="button" onclick="start = setTimeout(HelloWord,10);">Start</button>
+        <button type="button" onclick="clearTimeout(start)">Stop</button>
+        <script src="./Test.js"></script>
+        <script>
+            var chuoi1="HỌC HTML và CSS";
+            document.getElementById("nd1").innerHTML = "Lập trình web";
+            document.write("Chuỗi xuất hiện: "+chuoi1.indexOf("HTML"));
+            document.write("<br>");
+            document.write("Chuỗi có được là: "+chuoi1.slice(4,8));
+            document.write("<br>");
+            document.write(chuoi1.replace("HTML","JavaScript"));
+            document.write("Chiều dài mãng là: "+chuoi1.split("").length);
+        </script>
+    </body>
+</html>
